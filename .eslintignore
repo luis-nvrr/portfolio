@@ -5,3 +5,4 @@ dist-ssr
 *.local
 node_modules/*
 vite.config.ts
+tailwind.config.js
