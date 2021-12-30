@@ -2,6 +2,9 @@ module.exports = {
   settings: {
     'import/resolver': {
       typescript: {},
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
     },
   },
   env: {
@@ -31,5 +34,15 @@ module.exports = {
     eqeqeq: ['error'],
     semi: ['off', 'never'],
     'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
 }
