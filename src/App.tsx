@@ -1,51 +1,29 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
+import React from 'react'
+import Emoji from './components/Emoji'
+import Navbar from './components/Navbar/Navbar'
+import ProfileCard from './components/Navbar/ProfileCard'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="flex bg-slate-900 h-screen items-center">
-      <header className="p-6 max-w-sm mx-auto text-slate-100 font-medium space-x-4 space-y-4">
-        <img src={logo} className="object-center" alt="logo" />
-        <p className="font-semibold text-center">Hello Vite + React!</p>
-        <p className="text-center">
-          <button
-            className="bg-sky-500/50 rounded-lg p-2"
-            type="button"
-            onClick={() => setCount(() => count + 1)}
-          >
-            count is:
-            {count}
-          </button>
+const App: React.FC = () => (
+  <div className="flex bg-stone-50 h-screen flex-col">
+    <Navbar />
+    <main className="flex flex-col items-center p-6 max-w-sm mx-auto text-black-100 space-y-4">
+      <ProfileCard />
+      <div className="text-center text-lg">
+        <p className="font-bold text-center mt-4">
+          Hi there, I&apos;m Luis Navarro
         </p>
-        <p className="text-slate-500 text-center">
-          Edit
-          <code> App.tsx </code>
-          and save to test HMR updates.
-        </p>
-        <p className="text-center">
-          <a
-            className="hover:text-cyan-300/80"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="hover:text-cyan-300/80"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
-}
+        <Emoji
+          label="waving hand"
+          symbol="&#128075;&#127997; &#128075;&#127997;"
+        />
+      </div>
+      <p className="text-stone-900 text-center">
+        I enjoy product development, solving problems and learning along the
+        way.
+        <br /> Get in touch!
+      </p>
+    </main>
+  </div>
+)
 
 export default App
