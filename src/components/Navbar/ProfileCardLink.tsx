@@ -3,16 +3,26 @@ import React from 'react'
 type ProfileCardLinkProps = {
   symbol: string
   name: string
+  link: string
 }
 
-const ProfileCardLink: React.FC<ProfileCardLinkProps> = ({ symbol, name }) => (
+const ProfileCardLink: React.FC<ProfileCardLinkProps> = ({
+  symbol,
+  name,
+  link,
+}) => (
   <a
-    className="text-orange-600 px-2 underline lg:text-neutral-900 lg:no-underline lg:hover:underline lg:hover:text-orange-600"
-    href="https://vitejs.dev/guide/features.html"
+    className="px-2 text-orange-600 underline lg:text-neutral-900 lg:no-underline lg:hover:underline lg:hover:text-orange-600"
+    href={link}
     target="_blank"
     rel="noopener noreferrer"
   >
-    {symbol} | {name}
+    <img
+      className="w-8 h-8 mx-auto block"
+      src={`/src/assets/${symbol}`}
+      alt={name}
+    />{' '}
+    {name}
   </a>
 )
 
