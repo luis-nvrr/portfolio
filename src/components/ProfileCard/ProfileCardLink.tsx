@@ -1,7 +1,7 @@
 import React from 'react'
 
 type ProfileCardLinkProps = {
-  symbol: string
+  symbol: any
   name: string
   link: string
 }
@@ -17,12 +17,7 @@ const ProfileCardLink: React.FC<ProfileCardLinkProps> = ({
     target="_blank"
     rel="noopener noreferrer"
   >
-    <img
-      className="w-8 h-8 mx-auto block"
-      src={`/src/assets/${symbol}`}
-      alt={name}
-    />{' '}
-    {name}
+    <img className="w-8 h-8 mx-auto block" src={symbol} alt={name} /> {name}
   </a>
 )
 

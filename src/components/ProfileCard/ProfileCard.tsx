@@ -1,18 +1,20 @@
 import React from 'react'
 import profile from '~/assets/profile.jpg'
 import ProfileCardLink from './ProfileCardLink'
+import github from '~/assets/github.svg'
+import linkedin from '~/assets/linkedin.svg'
 
 const ProfileCard: React.FC = () => {
   const links = [
     {
       id: 1,
-      symbol: 'github.svg',
+      symbol: github,
       name: 'Github',
       link: 'https://www.github.com/luis-nvrr',
     },
     {
       id: 2,
-      symbol: 'linkedin.svg',
+      symbol: linkedin,
       name: 'Linkedin',
       link: 'https://www.linkedin.com/in/luisnavarro-',
     },
