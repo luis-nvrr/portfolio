@@ -1,8 +1,10 @@
 import React from 'react'
 import ProjectList, { Project } from '~/components/Projects/ProjectsList'
-import deliverEat from '~/assets/deliver-eat.png'
-import blogsApp from '~/assets/blogs.png'
-import noImage from '~/assets/no-image.jpg'
+import deliverEat from '~/assets/deliver-eat-video.png'
+import blogsApp from '~/assets/blogs-video.png'
+import filmsApi from '~/assets/films-api-video.png'
+import motorBusqueda from '~/assets/motor-busqueda-video.png'
+import javafx from '~/assets/javafx.png'
 
 const Projects = () => {
   const projects: Project[] = [
@@ -39,7 +41,7 @@ const Projects = () => {
     {
       id: 3,
       name: 'Conteo de Elecciones',
-      image: noImage,
+      image: javafx,
       sites: [
         {
           id: 1,
@@ -51,7 +53,7 @@ const Projects = () => {
     {
       id: 4,
       name: 'Motor de Busqueda',
-      image: noImage,
+      image: motorBusqueda,
       sites: [
         {
           id: 1,
@@ -68,24 +70,12 @@ const Projects = () => {
     {
       id: 6,
       name: 'Films Autocomplete API',
-      image: noImage,
+      image: filmsApi,
       sites: [
         {
           id: 1,
           name: 'Github',
           url: 'https://github.com/luis-nvrr/autocomplete-films-api',
-        },
-      ],
-    },
-    {
-      id: 7,
-      name: 'Adviency Challenge',
-      image: noImage,
-      sites: [
-        {
-          id: 1,
-          name: 'Github',
-          url: 'https://github.com/luis-nvrr/adviency-challenge',
         },
       ],
     },
