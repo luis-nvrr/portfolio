@@ -32,7 +32,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
     onClick={clickItem}
   >
     <img
-      className="lg:hover:opacity-50 object-cover aspect-auto"
+      className="lg:hover:opacity-50 object-cover aspect-video"
       src={image}
       alt={name}
     />
