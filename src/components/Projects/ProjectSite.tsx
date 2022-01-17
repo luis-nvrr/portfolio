@@ -1,6 +1,7 @@
 import React from 'react'
 import githubLogo from '~/assets/github-logo.svg'
 import herokuLogo from '~/assets/heroku-logo.svg'
+import vercelLogo from '~/assets/vercel-logo.png'
 
 type SiteProps = {
   name: string
@@ -10,6 +11,7 @@ type SiteProps = {
 const sitesToLogoMap = new Map<string, any>([
   ['Github', githubLogo],
   ['Heroku', herokuLogo],
+  ['Vercel', vercelLogo],
 ])
 
 const ProjectSite: React.FC<SiteProps> = ({ name, url }) => (

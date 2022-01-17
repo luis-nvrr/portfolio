@@ -5,6 +5,8 @@ import blogsApp from '~/assets/blogs-video.png'
 import filmsApi from '~/assets/films-api-video.png'
 import motorBusqueda from '~/assets/motor-busqueda-video.png'
 import javafx from '~/assets/javafx.png'
+import polusPos from '~/assets/polus-pos.png'
+import portfolio from '~/assets/portfolio.png'
 
 const Projects = () => {
   const projects: Project[] = [
@@ -39,14 +41,36 @@ const Projects = () => {
       ],
     },
     {
-      id: 3,
-      name: 'Conteo de Elecciones',
-      image: javafx,
+      id: 5,
+      name: 'Polus POS',
+      image: polusPos,
       sites: [
         {
           id: 1,
           name: 'Github',
-          url: 'https://github.com/luis-nvrr/conteo-elecciones',
+          url: 'https://github.com/luis-nvrr/polus-pos',
+        },
+        {
+          id: 2,
+          name: 'Vercel',
+          url: 'https://polus-pos.vercel.app',
+        },
+      ],
+    },
+    {
+      id: 7,
+      name: 'Portfolio',
+      image: portfolio,
+      sites: [
+        {
+          id: 1,
+          name: 'Github',
+          url: 'https://github.com/luis-nvrr/portfolio',
+        },
+        {
+          id: 2,
+          name: 'Vercel',
+          url: 'https://luis-navarro.vercel.app',
         },
       ],
     },
@@ -64,6 +88,18 @@ const Projects = () => {
           id: 2,
           name: 'Github',
           url: 'https://github.com/luis-nvrr/motor-busqueda-frontend',
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: 'Conteo de Elecciones',
+      image: javafx,
+      sites: [
+        {
+          id: 1,
+          name: 'Github',
+          url: 'https://github.com/luis-nvrr/conteo-elecciones',
         },
       ],
     },
